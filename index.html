@@ -23,7 +23,7 @@
          <span class="header-accent link">Web</span>Studio</a>
         <ul class="header-list list">
             <li class="header-item">
-                <a href="./index.html" class="header-link link current">Студия</a></li>
+                <a href="./index.html" class="header-link link currents current">Студия</a></li>
             <li class="header-item">
                 <a href="./portfolio.html" class="header-link link ">Портфолио</a></li>
             <li class="header-item">
@@ -50,7 +50,7 @@
     <section class="hero">
         <div class="container"> 
             <h1 class="hero-title">Эффективные решения <br> для вашего бизнеса</h1>
-            <button type="button" class="hero-button">Заказать услугу</button>
+            <button type="button" class="hero-button" data-modal-open >Заказать услугу</button>
         </div>
     </section>
 <!-- section 1 Преимущества-->
@@ -102,11 +102,23 @@
     <h2 class="about-title">Чем мы занимаемся</h2>
     <ul class="about-examples list">
         <li class="about-item">
-            <img src="./img/jpg/box1.jpg" alt="box1" width="370" height="294" class="about-img"></li>
+            <img src="./img/jpg/box1.jpg" alt="box1" width="370" height="294" class="about-img">
+            <div class="about-box">
+                <p class="about-text">ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ</p>
+            </div>
+        </li>
         <li class="about-item">
-            <img src="./img/jpg/box2.jpg" alt="box2" width="370" height="294" class="about-img"></li>
+            <img src="./img/jpg/box2.jpg" alt="box2" width="370" height="294" class="about-img">
+            <div class="about-box">
+                <p class="about-text">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</p>
+            </div>
+        </li>
         <li class="about-item">
-            <img src="./img/jpg/box3.jpg" alt="box3" width="370" height="294" class="about-img"></li>
+            <img src="./img/jpg/box3.jpg" alt="box3" width="370" height="294" class="about-img">
+            <div class="about-box">
+                <p class="about-text">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</p>
+            </div>
+        </li>
     </ul>
     </div>
 </section>
@@ -309,6 +321,14 @@
     </div>
     
         </footer>
+        <div class="backdrop is-hidden" data-modal >
+            <div class="modal">
+                <button class="modal-button" data-modal-close >
+                    <svg class="modal-svg"><use href="./img/svg-image/symbol-defs.svg#icon-button-close"></use></svg>
+                </button>
+            </div>
+        </div>
+        <script src="./js/modal.js"></script>
 </body>
 </html>
 
