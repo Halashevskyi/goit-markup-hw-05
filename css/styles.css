@@ -7,7 +7,6 @@
     --button-portfolio-bg: #F5F4FA;
     --primary-background-color: #E5E5E5;
     --secondary-background-color: #2F303A;
-    --transition-hover-focus: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-link.current {
@@ -202,7 +201,8 @@ section {
     color: var(--title-color);
     background-color: var(--accent-color);
     cursor: pointer;
-    transition: color background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-button:hover,
@@ -304,13 +304,11 @@ section {
 }
 
 .about-text {
-font-style: bold;
-line-height: 16px;
 line-height: 100%;
 align-items: center;
 vertical-align: top;
-letter-spacing: 3%;
 color: var(--title-color);
+font-weight: 700;
 
 
 }
@@ -399,7 +397,8 @@ color: var(--title-color);
     background-color: transparent;
     border-radius: 50%;
     color: #AFB1B8;
-    transition: color background-color  250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color  250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -447,7 +446,7 @@ img {
     line-height: 42px;
     text-align: center;
     letter-spacing: 0.03em;
-    color: var(--primary-text-color)
+    color: var(--primary-text-color);
 }
 
 .clients-box {
@@ -468,7 +467,8 @@ img {
         border: 1px solid #AFB1B8;
         border-radius: 4px;
         color: #AFB1B8;
-        transition: color background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition:  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-box:last-child {
@@ -587,12 +587,13 @@ img {
     height: 44px;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color  250ms cubic-bezier(0.4, 0, 0.2, 1),
+                 border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-links {
     display: flex;
     margin-right: 10px;
-    transition: background-color border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-links:last-child {
@@ -646,8 +647,8 @@ img {
     color: var(--primary-text-color);
     background: var(--button-portfolio-bg);
     cursor: pointer;
-    transition: color background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+    transition:  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                color 250ms cubic-bezier(0.4, 0, 0.2, 1) ;}
 
 .portfolio-button:hover,
 .portfolio-button:focus {
@@ -705,7 +706,7 @@ img {
     vertical-align: top;
     background-color: rgba(33, 150, 243, 0.9);
     color: var(--title-color);
-    transform: translateY(100%);
+    transform: translateY(101%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
  /* transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
